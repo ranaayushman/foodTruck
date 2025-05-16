@@ -9,11 +9,13 @@ const App = () => {
   const [cart, setCart] = useState([]);
 
   const addToCart = (item) => {
-    const exists = cart.find((i) => i.id === item.id);
-    if (!exists) {
-      setCart([...cart, item]);
-    }
+    setCart((prevCart) => {
+      const exists = prevCart.find((i) => i.idMeal === item.idMeal);
+      if (exists) return prevCart;
+      return [...prevCart, item];
+    });
   };
+  
 
   const removeFromCart = (id) => {
     setCart(cart.filter((item) => item.id !== id));
