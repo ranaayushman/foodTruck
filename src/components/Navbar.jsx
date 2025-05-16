@@ -5,7 +5,7 @@ import "../styles/Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">FoodieHub</div>
+      <div className="navbar-logo">YDC</div>
       <ul className="navbar-links">
         <li>
           <Link to="/">Home</Link>
@@ -16,12 +16,12 @@ const Navbar = () => {
         <li>
           <Link to="/cart">Cart</Link>
         </li>
-        <li>
+        {/* <li>
           <a href="#about">About</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>Welcome to FoodieHub</h1>
+        <h1>Welcome to YDC</h1>
         <p>Delicious meals delivered to your doorstep.</p>
         <Link to="/foods" className="hero-btn">
           Explore Our Menu
