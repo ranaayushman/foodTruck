@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="hero-content">
         <h1>Welcome to FoodieHub</h1>
         <p>Delicious meals delivered to your doorstep.</p>
-        <Link to="/products" className="hero-btn">
+        <Link to="/foods" className="hero-btn">
           Explore Our Menu
         </Link>
       </div>
