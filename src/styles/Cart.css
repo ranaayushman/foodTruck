@@ -1,8 +1,13 @@
 .cart-container {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cart-title {
+  text-align: center;
   font-size: 1.75rem;
   margin-bottom: 16px;
   color: #333;
@@ -15,11 +20,16 @@
 
 .cart-grid {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .cart-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 1px solid #e0e0e0;
   padding: 12px;
   width: 240px;

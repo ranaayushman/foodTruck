@@ -10,8 +10,8 @@ const Foods = ({ addToCart }) => {
     if (addToCart) {
       addToCart(food);
       setNotification(`${food.strMeal} added to cart`);
+      window.scrollTo({ top: 0, behavior: "smooth" }); 
 
-      // Clear the notification after 2 seconds
       setTimeout(() => setNotification(""), 2000);
     }
   };

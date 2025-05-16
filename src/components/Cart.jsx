@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Cart.css";
+import Checkout from "./Checkout";
 
 const Cart = ({ cart, removeFromCart }) => {
   const [notification, setNotification] = useState("");
@@ -31,16 +32,17 @@ const Cart = ({ cart, removeFromCart }) => {
               <p className="cart-meta">
                 {item.strCategory} • {item.strArea}
               </p>
-              <button
+              {/* <button
                 onClick={() => handleRemove(item.idMeal, item.strMeal)}
                 className="cart-button"
               >
                 Remove
-              </button>
+              </button> */}
             </div>
           ))}
         </div>
       )}
+      <Checkout />
     </div>
   );
 };
